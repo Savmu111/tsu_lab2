@@ -1,7 +1,11 @@
 def hello():
-return "Hello, World!"
+    return "Hello, World!"
+
+
 def calculate_sum(a: int, b: int) -> int:
-return a + b
+    return a + b
+
+
 if __name__ == "__main__":
-print(hello())
-print(f"Result: {calculate_sum(2, 3)}")
+    print(hello())
+    print(f"Result: {calculate_sum(2, 3)}")
