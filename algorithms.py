@@ -1,10 +1,12 @@
 def sum_odd_nums(n: int) -> int:
     if n < 1:
         return 0
-    elif n % 2 == 0:
-        return n // 2
-    else:
-        return (n // 2) + 1
+
+    total = 0
+    for number in range(1, n + 1):
+        if number % 2 != 0:
+            total += number
+    return total
 
 
 def euclidean(a: int, b: int) -> int:
@@ -31,7 +33,7 @@ def num_of_vowels(text: str) -> int:
     text = text.lower()
 
     count = 0
-    for char in text.lower():
+    for char in text:
         if char in vowels:
             count += 1
 
